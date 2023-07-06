@@ -1,0 +1,33 @@
+Name of the database: cars_database
+
+id				INT			PRIMARY_KEY UNSIGNED AUTOINCREMENT
+brand				VARCHAR(50)		NOTNULL
+model				VARCHAR(100)		NOTNULL
+price				TINY			NOTNULL
+year				YEAR			NOTNULL
+condition			VARCHAR(10)		NULL
+km				SMALLINT		NOTNULL
+hp				SMALLINT		NOTNULL
+cw				SMALLINT		NOTNULL
+shift_type			VARCHAR(15)		NOTNULL
+fuel_type			VARCHAR(20)		NOTNULL
+traction			VARCHAR(15)		NULL
+seats				TINYINT			NULL
+doors				TINYINT			NULL
+owners				TINYINT			NULL DEFAULT(0)
+cilinder_number			TINYINT			NULL
+empty_weight			SMALLINT		NULL
+consume				FLOAT(5,2)		NULL
+emission_class			VARCHAR(7)		NULL
+paint_color			VARCHAR(20)		NOTNULL
+seats_color			VARCHAR(20)		NULL
+interior_color			VARCHAR(20)		NULL
+seller				VARCHAR(50)		NOTNULL
+seller_location			VARCHAR(50)		NOTNULL
+seller_address			VARCHAR(50)		NOTNULL
+seller_phone			VARCHAR(20)		NOTNULL
+car_location			VARCHAR(20)		NOTNULL
+plate				VARCHAR(15)		NULL UNIQUE
+description			TEXT			NULL
+optionals			TEXT			NULL
+car_image			TEXT			NULL
